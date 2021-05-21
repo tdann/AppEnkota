@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_height="wrap_content"
+        android:text="Small"
+        android:id="@+id/sm"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Ugx 5000"
+        android:id="@+id/small_price"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/sm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:layout_below="@+id/sm"
+        android:id="@+id/m"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Ugx 10000"
+        android:textColor="#000"
+        android:layout_below="@+id/sm"
+        android:id="@+id/medium_price"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/m"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        android:layout_below="@+id/medium_price"
+        android:id="@+id/lar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Ugx 15000"
+        android:layout_below="@+id/medium_price"
+        android:textColor="#000"
+        android:id="@+id/large_price"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/lar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Set Prices"
+        android:onClick="set_prices"
+        android:layout_below="@+id/large_price"/>
+</RelativeLayout>
+

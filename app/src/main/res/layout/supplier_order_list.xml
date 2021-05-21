@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".farmer.FarmerHome">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/spare_part_listed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/dorder_image"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/matook"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/spName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xxx"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Client's Phone :\t"
+                android:textColor="#03A9F4">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dspare_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xxx"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/spName"
+                android:maxLength="20"
+                android:text="John"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/sissue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spName"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Product name:"
+                android:textColor="#03A9F4">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/sDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loca"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Amount :\t"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/damount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loca"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/sDesc"
+                android:ellipsize="end"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:text="Shs. 1,000,000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/loca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sissue"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Quantity:"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/dqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sissue"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/loca"
+                android:layout_toRightOf="@id/loca"
+                
+                android:maxLength="30"
+                android:text="4"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/dpartname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spName"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/sissue"
+                android:maxLength="25"
+                android:text="Part name"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/sta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sDesc"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Address :\t"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/dlocate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sDesc"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/sta"
+                android:ellipsize="end"
+              
+                android:maxLength="30"
+                android:maxLines="1"
+                android:text="Katete"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/stt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sta"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Order date :\t"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/dorstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sta"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/stt"
+                android:ellipsize="end"
+              
+                android:maxLength="30"
+                android:maxLines="1"
+                android:text="11/20/2020"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/ddt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stt"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Delivery date :\t"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/dddpending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stt"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ddt"
+                android:ellipsize="end"
+              
+                android:maxLength="30"
+                android:maxLines="1"
+                android:text="11/20/2020"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/xx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ddt"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Status :\t"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/ddpending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ddt"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/stt"
+                android:ellipsize="end"
+              
+                android:maxLength="30"
+                android:maxLines="1"
+                android:text="Pending"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/xxx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Note :\t"
+                android:visibility="gone"
+                android:textColor="#03A9F4" />
+
+            <TextView
+                android:id="@+id/ppart_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/xxx"
+                android:ellipsize="end"
+              
+                android:maxLength="30"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:text="Coming soon"
+                android:textColor="@color/colorPrimary" />
+            <Button
+                android:id="@+id/requested_canceled_orders"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dorder_image"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginStart="-65dp"
+                android:text="Cancel Order"
+                android:textColor="#DD2C00"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/requested_ordered"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xx"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toRightOf="@id/dorder_image"
+                android:text="Confirm Order"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OrderId"
+                android:textColor="#DD2C00"
+                android:visibility="gone"
+                android:layout_marginTop="360dp"
+                android:gravity="center"
+                android:id="@+id/sp_dealer_id"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

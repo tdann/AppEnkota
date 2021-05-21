@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/my_account"
+            android:icon="@mipmap/myaccount"
+            android:title="My Account" />
+        <item
+            android:id="@+id/my_team"
+            android:icon="@mipmap/myteam"
+            android:visible="false"
+            android:title="Join Farming Group" />
+        <item
+            android:id="@+id/statistics"
+            android:icon="@mipmap/stats"
+            android:title="Market Prices" />
+        <item
+            android:id="@+id/diseses"
+            android:icon="@drawable/matooke_logo"
+            android:title="Common Diseases" />
+        <item
+            android:id="@+id/sell_waste"
+            android:visible="false"
+            android:icon="@drawable/matooke_logo"
+            android:title="Sell Wastes" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share app" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send invite" />
+        </menu>
+    </item>
+<item
+    android:id="@+id/nav_logout"
+    android:title="Logout"
+    android:icon="@drawable/logout"
+    />
+</menu>

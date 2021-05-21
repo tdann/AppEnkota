@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tdannandjuliet.assignment.enkotaApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/matoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/matoo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="tdannandjuliet.assignment.enkotaApp.farmer.Diseases_List"
+            android:label="Common Diseases"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.farmer.FarmerHome"
+            android:theme="@style/AppThemesoftcodes2"/>
+        <activity android:name="tdannandjuliet.assignment.enkotaApp.farmer.MarketPrices"
+            android:label="Current Market Prices"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.farmer.FarmerHome"
+            android:theme="@style/AppThemesoftcodes2"/>
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.admin.Add_Adverts"
+            android:label="Add Advert"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.admin.AdminDashboard"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.admin.Add_CommonDiseases"
+            android:label="Common Diseases"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.admin.AdminDashboard"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.admin.AddMatookePrice"
+            android:label="Set Prices"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.admin.AdminDashboard"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.admin.AddFarmingTips"
+            android:label="Add Farming Tips"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.admin.AdminDashboard"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity android:name="tdannandjuliet.assignment.enkotaApp.admin.AdminDashboard" />
+        <activity android:name="tdannandjuliet.assignment.enkotaApp.farmer.RealTimePrices" />
+        <activity android:name="tdannandjuliet.assignment.enkotaApp.farmer.FarmingTips" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.AboutUs"
+            android:label="About"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.ContactUs"
+            android:label="Contact Us"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.ChangePassword"
+            android:label="Change Password"
+            android:theme="@style/AppTheme3" />
+        <activity android:name="tdannandjuliet.assignment.enkotaApp.buyer.ReferEarn" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.TransactionHistory"
+            android:label="Transaction History"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.MyOrders"
+            android:label="My Orders"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.farmer.ConfirmOrderMatooke"
+            android:label="Confirm Order"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.Call_Farmer"
+            android:label="Calling Farmer"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.farmer.AddMatooke"
+            android:label="Add Matooke"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.farmer.FarmerHome"
+            android:theme="@style/AppThemesoftcodes2" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.MyNotifications"
+            android:label="Notifications"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.MyCart"
+            android:label="My Cart"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.TrackOrder"
+            android:label="Orders"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.MyAddress"
+            android:label="Update Address"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.buyer.MyHome" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.MyHome"
+            android:label="@string/title_activity_my_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.Buyer_Home"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.farmer.MyTeam"
+            android:label="Matooke Sellers"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.farmer.FarmerHome" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.farmer.FarmerHome"
+            android:label="Farmer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.AccountManager"
+            android:label="My Account"
+            android:theme="@style/AppThemesoftcodes2"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.farmer.FarmerHome" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.SignUpFarmer"
+            android:label="Register As Farmer"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.MainActivity" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.SignUpBuyer"
+            android:label="SignUp As Buyer"
+            android:parentActivityName="tdannandjuliet.assignment.enkotaApp.MainActivity" />
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tdannandjuliet.assignment.enkotaApp.buyer.OrderNow"
+            android:label="Add to Cart"
+            android:theme="@style/AppTheme3" />
+    </application>
+
+</manifest>
